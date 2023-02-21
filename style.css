@@ -1,5 +1,6 @@
-body {
-    min-height: 3000px;
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
 .navbar {
@@ -17,7 +18,7 @@ body {
 
 .jumbotron {
     padding: 5rem 2rem;
-    height: 500px;
+    height: 650px;
     background-image: url('../img/header2.jpg');
     background-attachment: fixed;
     background-size: cover;
@@ -55,6 +56,175 @@ body {
     
     border-radius: 10px;
 }
+
+.col .bi-geo-alt {
+    margin-right: 0.5rem;
+}
+
+section h2 {
+    text-align: center;
+    padding-bottom: 3rem;
+    font-weight: 550;
+}
+
+.container-satu {
+    width: 1200px;
+    height: 550px;
+    margin-left: 200px;
+    box-sizing: border-box;
+    display: flex;
+    text-align: start;
+    justify-content: flex-start;
+    margin-bottom: 100px;
+}
+
+.kolom-utama {
+    flex: 6;
+    padding-top: 1rem;
+    margin-left: 0;
+    margin-right: 80px;
+}
+
+
+.sidebar-satu {
+    flex: 4;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.sidebar-dua {
+    flex: 4;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+.container-satu .sidebar-satu .gmbr:hover, .sidebar-dua .gmbr:hover {
+    transform: scale(1.2);
+    transition: all .3s linear;
+}
+
+.gmbr {
+    border-radius: 20px;
+}
+
+#blog {
+    margin-top: 5rem;
+}
+
+.container-news {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+.container-news .heading {
+    font-size: 40px;
+    margin-bottom: 70px;
+
+}
+
+.container-news .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.container-news .box-container .box {
+    background-color: #d4d3d3;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0.5px 10px rgba(0,0,0,0.2);
+}
+
+.container-news .box-container .box .image {
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.container-news .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container-news .box-container .box:hover .image img {
+    transform: scale(1.1);
+    transition: all .2s linear;
+}
+
+.container-news .box-container .box .content p {
+    font-size: 15px;
+    color: #777;
+    line-height: 1.4;
+    word-spacing: 2px;
+}
+
+.container-news .box-container .box .content .btn-news {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #334;
+    color: #334;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.container-news .box-container .box .content .btn-news:hover {
+    background-color: white;
+    border-color: black;
+    color: #334;
+}
+
+.container-news .box-container .box .content .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #334;
+}
+
+.contact h2, .about h2 {
+    font-weight: 600;
+}
+
+#about p {
+    text-align: justify;
+}
+
+#contact, #about {
+    padding-top: 4rem;
+}
+
+.phone .bi-telephone, .bi-envelope, .bi-whatsapp {
+    font-size: 25px;
+    padding-right: 0.5rem;
+}
+
+.phone p {
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+#about img {
+    width: 100%;
+    height: auto;
+   
+}
+
 
 .footer {
     background-image: linear-gradient(#787f9e, black);
