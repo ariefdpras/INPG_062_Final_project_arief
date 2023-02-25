@@ -126,7 +126,25 @@ section h2 {
 }
 
 #blog {
-    margin-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+}
+
+#blog .container .row h2 {
+    margin-bottom: 90px;
+}
+
+#about {
+    margin-bottom: 6rem;
+}
+
+#btgmedia {
+    font-weight: bold;
+}
+
+#about .container .row .col h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 40px;
 }
 
 .container-news {
@@ -149,10 +167,10 @@ section h2 {
 }
 
 .container-news .box-container .box {
-    background-color: #d4d3d3;
+    background-color: white;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0.5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0.5px 10px rgb(247, 244, 244);
 }
 
 .container-news .box-container .box .image {
@@ -175,24 +193,28 @@ section h2 {
 
 .container-news .box-container .box .content p {
     font-size: 15px;
-    color: #777;
     line-height: 1.4;
     word-spacing: 2px;
+    text-align: justify;
+}
+
+.container-news .box-container .box .content h3 {
+    font-weight: 650;
 }
 
 .container-news .box-container .box .content .btn-news {
     display: inline-block;
     padding: 10px 20px;
-    border: 1px solid #334;
-    color: #334;
+    border: 1px solid white;
+    color: black;
     font-size: 13px;
     text-decoration: none;
 }
 
 .container-news .box-container .box .content .btn-news:hover {
-    background-color: white;
+    background-color: black;
     border-color: black;
-    color: #334;
+    color: white;
 }
 
 .container-news .box-container .box .content .icons {
@@ -202,6 +224,10 @@ section h2 {
     margin-top: 20px;
     padding-top: 15px;
     border-top: 1px solid #334; 
+}
+
+#mr4 {
+    display: none;
 }
 
 @keyframes scroll{
@@ -234,22 +260,37 @@ section h2 {
     height: 100px;
     width: 250px;
     padding: 10px auto;
+}
 
+.slider .slide img {
+    justify-content: center;
+}
+
+.row-contact {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 6rem;
 }
 
 .contact h2, .about h2 {
     font-weight: 600;
 }
 
-.row-contact .col-contact h2 {
+.row-contact .col-contact .location {
+    margin-right: 425px;
+}
+
+.row-contact .col-contact .office {
     margin-right: 415px;
+    margin-bottom: 0px;
+    margin-top: 30px;
 }
 
 #about p {
     text-align: justify;
 }
 
-#contact, #about {
+#about {
     padding-top: 4rem;
 }
 
@@ -272,8 +313,7 @@ section h2 {
 
 .footer {
     background-image: linear-gradient(#787f9e, black);
-    padding: 70px 0;
-    margin-top: 2.5rem;
+    padding: 15px 0;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -350,4 +390,105 @@ section h2 {
 .footer-col .social-links a:hover {
     color: black;
     background-color: #ffffff;
+}
+
+.body-todo {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#4f5363, black);
+    min-height: 150vh;
+}
+
+.body-todo h1 {
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    font-size: 50px;
+    font-weight: 600;
+    color: #f8ebeb;
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+    
+}
+
+.body-todo h2 {
+    font-size: 40px;    
+    font-weight: 600;
+    color: white;
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+
+}
+
+.container-todo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-todo a {
+    position: relative;
+    width: 150px;
+    height: 60px;
+    display: inline-block;
+    background: white;
+    margin: 20px;
+}
+
+.container-todo a:before, 
+.container-todo a:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: red;
+    transition: 0.4s;
+}
+
+.container-todo a:nth-child(1):before, 
+.container-todo a:nth-child(1):after {
+    background: linear-gradient(48deg, #19a0df, #101035,  #101035, #d400d4);  
+}
+
+.container-todo a:nth-child(4):before, 
+.container-todo a:nth-child(4):after {
+    background: linear-gradient(48deg, #b4df19, #101035,  #101035, #04db33);
+}
+
+.container-todo a:hover:before {
+    inset: -3px;
+}
+
+.container-todo a:hover:after {
+    inset: -3px;
+    filter: blur(10px);
+}
+
+.container-todo a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: #101035;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.container-todo a span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skew(25deg);
 }
