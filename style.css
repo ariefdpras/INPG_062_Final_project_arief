@@ -396,8 +396,15 @@ section h2 {
     text-align: center;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#4f5363, black);
+    background: linear-gradient(#4f5363, white);
     min-height: 150vh;
+}
+
+#todotext {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    color: black;
 }
 
 .body-todo h1 {
